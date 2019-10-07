@@ -7,6 +7,6 @@
     </head>
     <body>
         <h1>Школа</h1>
-        <a href="newPeople">Новая учётная запись</a>
+        <a href="teacher">Войти как учитель</a><br>
     </body>
 </html>

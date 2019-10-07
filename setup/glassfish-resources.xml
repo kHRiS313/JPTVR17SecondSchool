@@ -10,5 +10,5 @@
         <property name="URL" value="jdbc:mysql://localhost:3306/jptvr17webschool?zeroDateTimeBehavior=convertToNull&amp;useUnicode=true&amp;characterEncoding=utf8"/>
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
     </jdbc-connection-pool>
-    <jdbc-resource enabled="true" jndi-name="java:app/Conn" object-type="user" pool-name="mysql_jptvr17webschool_jptvr17webschoolPool"/>
+    <jdbc-resource enabled="true" jndi-name="school" object-type="user" pool-name="mysql_jptvr17webschool_jptvr17webschoolPool"/>
 </resources>

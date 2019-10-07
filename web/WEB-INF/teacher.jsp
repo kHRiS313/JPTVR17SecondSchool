@@ -13,10 +13,12 @@
     </head>
     <body>
         <h1>Учитель</h1>
-        <a href="newPeople">Новая учётная запись</a>
-        <a href="">Создать предмет</a>
-        <a href="">Посмотреть список предметов</a>
-        <a href="">Предметы и оценки</a>
-        <a href="">Выставить оценку</a>
+        <a href="newPeople">Новая учётная запись</a><br>
+        <a href="newSubject">Создать предмет</a><br>
+        <a href="newJournal">Выставить оценку</a><br>
+        <a href="allSubjects">Посмотреть список предметов</a><br>
+        <a href="allPeople">Посмотреть список пользователей</a><br>
+        <a href="allGrades">Посмотреть список оценок</a><br>
+        
     </body>
 </html>

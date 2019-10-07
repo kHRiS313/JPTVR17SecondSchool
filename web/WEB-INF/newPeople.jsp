@@ -21,5 +21,6 @@
             <input type="submit" valu="Подтвердить">
         </form>
         <h2>Создан пользователь: ${people.name}, ${people.role}</h2>
+        <a href='teacher'>Вернуться</a>
     </body>
 </html>
