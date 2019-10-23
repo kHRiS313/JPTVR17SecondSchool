@@ -40,6 +40,6 @@
         <br><br>
         <input type="submit" vlaue="Поставить оценку">
     </form>
-    <a href='teacher'>Вернуться</a>
+    <a href='./'>Вернуться</a>
     </body>
 </html>

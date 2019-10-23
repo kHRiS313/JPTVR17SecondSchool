@@ -12,28 +12,43 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Пользователи</h1>
-        <table style="text-align: center;">
-            <th>ID</th>
-            <th>Hours</th>
-            <th>Name</th>
-            <th>Role</th>
-            <th>Control</th>
-        <c:forEach var="subject" items="${listPeople}">
-        <tr>
-            <td>${subject.id}</td>
-            <c:if test="${subject.role == 0}">
-                <td><a href='StudentGrades?id=${subject.id}'>${subject.name}</a></td>
-            </c:if>
-            <c:if test="${subject.role == 1}">
-                <td>${subject.name}</td>
-            </c:if>
-            <td>${subject.name}</td>
-            <td>${subject.role}</td>
-            <td><a href="editPerson?id=${subject.id}">Edit</a></td>
-        </tr>   
-       </c:forEach>
+        <c:set var="yourrole" value="${user.people.role}"></c:set>
+            <h1>Пользователи</h1>
+            <table style="text-align: center;">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Role</th>
+                <c:if test="${yourrole == 2}">
+                <th>Control</th>
+                </c:if>
+
+            <c:forEach var="subject" items="${listPeople}">
+                <tr>
+                    <td>${subject.id}</td>
+                    <c:if test="${subject.role == 0}">
+                        <c:if test="${yourrole == 2}">
+                            <td><a href="StudentGradesAdmin?id=${subject.id}">${subject.name}</a></td>
+                        </c:if>
+                        <c:if test="${yourrole == 1}">
+                            <td><a href='StudentGrades?id=${subject.id}'>${subject.name}</a></td>
+                            </c:if>
+
+                    </c:if>
+                    <c:if test="${subject.role == 1}">
+                        <td>${subject.name}</td>
+                    </c:if>
+                    <c:if test="${subject.role == 2}">
+                        <td>${subject.name}</td>
+                    </c:if>
+                    <td>${subject.role}</td>
+
+                    <c:if test="${yourrole == 2}">
+                        <td><a href="editPerson?id=${subject.id}">Edit</a></td>
+                    </c:if>
+
+                </tr>   
+            </c:forEach>
         </table>
-        <a href='teacher'>Вернуться</a>
+        <a href='./'>Вернуться</a>
     </body>
 </html>

@@ -17,9 +17,9 @@
             <th>ID</th>
             <th>Date</th>
             <th>Grade</th>
-            <th>Student ID</th>
-            <th>Subject ID</th>
-            <th>Teacher ID</th>
+            <th>Student</th>
+            <th>Subject</th>
+            <th>Teacher</th>
             <th>Control</th>
             <c:forEach var="journal" items="${listJournals}">
                 <tr>
@@ -33,6 +33,6 @@
                 </tr>   
            </c:forEach>
         </table>
-        <a href='allSubjects'>Вернуться</a>
+        <a href='./'>Вернуться</a>
     </body>
 </html>

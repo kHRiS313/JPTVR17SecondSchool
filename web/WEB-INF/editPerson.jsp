@@ -16,7 +16,7 @@
         <form action="changePerson" method="POST">
             <input type="hidden" name="id" value="${person.id}">
             Имя: <input type="text" name="name" value="${person.name}"><br>
-            Роль: <input type="number" name="role" min="0" max="1" value="${person.role}"><br>
+            Роль: <input type="number" name="role" min="0" max="2" value="${person.role}"><br>
             <input type="submit" value="Save">
         </form>
             <a href='allPeople'>Вернуться</a>

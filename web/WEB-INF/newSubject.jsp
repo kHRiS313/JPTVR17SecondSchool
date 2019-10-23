@@ -19,6 +19,6 @@
             <input type="submit" value="Создать">
         </form>
         <h2>Создан предмет: ${subject.name}, ${subject.hours} ч.</h2>
-        <a href='teacher'>Вернуться</a>
+        <a href='./'>Вернуться</a>
     </body>
 </html>
